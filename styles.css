@@ -68,6 +68,13 @@ body {
     }
 }
 
+.experiences>h3,
+.additional-info__education>h3,
+.additional-info__languages>h3 {
+    font-size: 30px;
+}
+
+
 /* Contact info */
 .contact-info__header,
 .contact-info__sub-header {
@@ -132,6 +139,14 @@ body {
     border-color: var(--text-decoration-color);
 }
 
+.contact-info__avatar:hover {
+    animation: rotate360 2s;
+}
+
+@keyframes rotate360 {
+    50% {transform: scale(2) rotate(360deg);}
+}
+
 /* Intro and skills */
 .intro {
     display: flex;
@@ -143,6 +158,12 @@ body {
     width: 30px;
     display: flex;
     justify-content: center;
+}
+
+.intro__icon-wrapper.quote-close {
+    transform: rotate(180deg);
+    margin-right: 0px;
+    margin-left: 30px;
 }
 
 .intro__icon {
@@ -172,7 +193,7 @@ body {
 
 /* Experience and additional info */
 .experiences {
-    flex: 1 1 60%;
+    flex: 1 1 100%;
     margin-right: 50px;
 }
 
